@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Policies & Terms | SecureLife SACCO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>SecureLife SACCO</h1>
+      <p class="tagline">Your financial security partner</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="health.html">Health Insurance</a>
+        <a href="policies.html" class="active">Policies</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="policies-container">
+    <div class="container">
+      <h2 data-aos="fade-up">SACCO Policies & Terms</h2>
+      
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="membership">Membership Rules</button>
+        <button class="tab-btn" data-tab="terms">Terms & Conditions</button>
+        <button class="tab-btn" data-tab="policies">SACCO Policies</button>
+      </div>
+      
+      <div class="tab-content active" id="membership">
+        <section class="policy-section">
+          <h3><i class="fas fa-user-plus"></i> Membership Eligibility</h3>
+          <ol>
+            <li>Members must be at least 18 years of age</li>
+            <li>Valid government-issued ID required</li>
+            <li>Minimum initial share contribution of $100</li>
+            <li>Completion of membership application form</li>
+            <li>Approval by the SACCO management committee</li>
+          </ol>
+        </section>
+        
+        <section class="policy-section">
+          <h3><i class="fas fa-handshake"></i> Member Responsibilities</h3>
+          <ol>
+            <li>Regular attendance of general meetings</li>
+            <li>Timely payment of monthly contributions</li>
+            <li>Adherence to SACCO bylaws and regulations</li>
+            <li>Proper utilization of SACCO funds</li>
+            <li>Maintenance of accurate personal records</li>
+          </ol>
+        </section>
+        
+        <section class="policy-section">
+          <h3><i class="fas fa-money-bill-wave"></i> Financial Obligations</h3>
+          <ul>
+            <li><strong>Monthly Contributions:</strong> Minimum $50 or 5% of monthly income (whichever is higher)</li>
+            <li><strong>Shares:</strong> Minimum 100 shares at $1 par value</li>
+            <li><strong>Loan Repayment:</strong> Maximum 24 months at 10% interest</li>
+            <li><strong>Withdrawals:</strong> 30 days notice required for share withdrawals</li>
+          </ul>
+        </section>
+      </div>
+      
+      <div class="tab-content" id="terms">
+        <section class="policy-section">
+          <h3><i class="fas fa-file-contract"></i> General Terms</h3>
+          <ol>
+            <li>All members are subject to these terms upon registration</li>
+            <li>The SACCO reserves the right to amend terms with 30 days notice</li>
+            <li>Membership may be terminated for violation of terms</li>
+            <li>Disputes shall be resolved through SACCO arbitration</li>
+          </ol>
+        </section>
+        
+        <section class="policy-section">
+          <h3><i class="fas fa-gavel"></i> Loan Terms</h3>
+          <ul>
+            <li><strong>Eligibility:</strong> 6 months continuous membership</li>
+            <li><strong>Limit:</strong> 3 times share capital</li>
+            <li><strong>Guarantors:</strong> 2 members with equal shares</li>
+            <li><strong>Default:</strong> 5% penalty after 30 days</li>
+          </ul>
+        </section>
+        
+        <section class="policy-section">
+          <h3><i class="fas fa-ban"></i> Prohibited Activities</h3>
+          <ol>
+            <li>Misuse of SACCO funds</li>
+            <li>Unauthorized disclosure of member information</li>
+            <li>Fraudulent loan applications</li>
+            <li>Failure to repay loans</li>
+            <li>Disruptive behavior during meetings</li>
+          </ol>
+        </section>
+      </div>
+      
+      <div class="tab-content" id="policies">
+        <section class="policy-section">
+          <h3><i class="fas fa-landmark"></i> Governance Policy</h3>
+          <ol>
+            <li>Annual general meeting every March</li>
+            <li>Board elections every 2 years</li>
+            <li>Financial audits conducted quarterly</li>
+            <li>Transparent record keeping</li>
+          </ol>
+        </section>
+        
+        <section class="policy-section">
+          <h3><i class="fas fa-shield-alt"></i> Risk Management</h3>
+          <ul>
+            <li><strong>Insurance:</strong> All deposits insured up to $50,000</li>
+            <li><strong>Reserves:</strong> 20% of profits retained</li>
+            <li><strong>Diversification:</strong> Maximum 30% in any single investment</li>
+          </ul>
+        </section>
+        
+        <section class="policy-section">
+          <h3><i class="fas fa-users"></i> Member Benefits</h3>
+          <ol>
+            <li>Dividends paid annually (minimum 70% of profits)</li>
+            <li>Emergency loans at 5% interest</li>
+            <li>Financial literacy training</li>
+            <li>Discounts on insurance products</li>
+          </ol>
+        </section>
+      </div>
+      
+      <div class="policy-actions">
+        <button class="btn btn-primary" id="downloadPdf">
+          <i class="fas fa-file-pdf"></i> Download Full Policy
+        </button>
+        <button class="btn btn-outline" id="printPolicy">
+          <i class="fas fa-print"></i> Print Policy
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <section class="acceptance-section">
+    <div class="container">
+      <div class="acceptance-box">
+        <h3>Policy Acceptance</h3>
+        <p>By continuing to use our services, you acknowledge that you have read and agreed to our policies and terms.</p>
+        <div class="checkbox-group">
+          <input type="checkbox" id="acceptTerms">
+          <label for="acceptTerms">I accept the terms and conditions</label>
+        </div>
+        <button class="btn btn-primary" id="continueBtn" disabled>Continue</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>SecureLife SACCO</h3>
+          <p>Providing financial security since 2003</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="health.html">Health Insurance</a></li>
+            <li><a href="policies.html">Policies</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-phone"></i> 0745700333-SACCO-HELP</p>
+          <p><i class="fas fa-envelope"></i> info@securelifesacco.com</p>
+          <p><i class="fas fa-envelope"></i> polycapwalter@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SecureLife SACCO. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
