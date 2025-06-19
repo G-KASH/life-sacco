@@ -1117,8 +1117,6 @@ nav ul li a {
   font-size: 1.2rem;
 }
 
-
-
     /* Inline styles for quick prototyping */
     body {
       font-family: 'Poppins', sans-serif;
@@ -1127,8 +1125,8 @@ nav ul li a {
       background-color: #f4f4f4;
     }
     header {
-      background-color: #1e299e;
-      color: white;
+      background-color: #00064d;
+      color: rgb(244, 238, 238);
       padding: 20px 0;
     }
     .container {

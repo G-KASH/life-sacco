@@ -7,8 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="styles.css">
+  
   
 </head>
 <body>
@@ -368,30 +369,6 @@
   <button id="toggle-button" class="dark-mode-toggle"><i class="fas fa-moon"></i></button>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    // Initialize animations
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out'
-    });
-    
-    // Simple FAQ toggle functionality
-    document.querySelectorAll('.faq-question').forEach(question => {
-      question.addEventListener('click', () => {
-        const answer = question.nextElementSibling;
-        const icon = question.querySelector('i');
-        
-        if (answer.style.display === 'block') {
-          answer.style.display = 'none';
-          icon.classList.remove('fa-minus');
-          icon.classList.add('fa-plus');
-        } else {
-          answer.style.display = 'block';
-          icon.classList.remove('fa-plus');
-          icon.classList.add('fa-minus');
-        }
-      });
-    });
-  </script>
+  
 </body>
 </html>
