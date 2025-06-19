@@ -1,7 +1,8 @@
 /* Base Styles */
 :root {
-    --primary-color: #0066cc;
-    --primary-dark: #004c8c;
+    --primary-color: rgb(27, 27, 159);
+    --secondary-primary: #0d0deb3a;
+    --primary-dark: #2d86ce;
     --secondary-color: #ffd700;
     --accent-color: #e63946;
     --light-color: #f8f9fa;
@@ -19,7 +20,7 @@
   /* Dark Mode Variables */
   .dark-mode {
     --light-color: #121212;
-    --dark-color: #f8f9fa;
+    --dark-color:#f8f9fa;
     --gray-color: #adb5bd;
     --light-gray: #343a40;
   }
@@ -119,6 +120,9 @@
   
   /* Header */
   header {
+    /* If you want a background image, use the following line: */
+    /* background-image: url('../../Downloads/3141210-uhd_3840_2160_25fps.mp4'); */
+    /* For background color only: */
     background-color: var(--primary-color);
     color: white;
     padding: 1.5rem 0;
@@ -1057,4 +1061,87 @@ html {
 /* Reduced paint areas */
 .header, .footer {
   contain: paint;
+
 }
+
+
+
+
+
+
+
+
+/* Make sure to reset margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.video-header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* or any height you want for the header */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures video covers the area */
+  z-index: -1; /* push behind content */
+}
+
+.nav-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+
+    /* Inline styles for quick prototyping */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #1e299e;
+      color: white;
+      padding: 20px 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero-content h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  
