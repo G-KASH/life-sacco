@@ -1,7 +1,7 @@
 /* Base Styles */
 :root {
-    --primary-color: rgb(27, 27, 159);
-    --secondary-primary: #0d0deb3a;
+    --primary-color: rgb(27, 159, 139);
+    --secondary-primary: #0ddceb3a;
     --primary-dark: #2d86ce;
     --secondary-color: #ffd700;
     --accent-color: #e63946;
